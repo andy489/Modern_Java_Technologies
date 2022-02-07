@@ -1,6 +1,8 @@
 # Съвременни Java Технологии @ ФМИ
 
-![Java 17](web/images/java-17.png)
+<p align="center">
+  <img src="web/images/java-17.png" />
+</p>
 
 ### Лекции и упражнения 2021/2022
 
