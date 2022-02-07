@@ -1,8 +1,8 @@
-class: center, middle
-
 # Обектно-ориентирано програмиране с Java
 
-![Java OOP](images/02.1-oop.jpg)
+<p align="center">
+  <img width="60%" src="images/02.1-oop.jpg" />
+</p>
 
 20.10.2021
 
