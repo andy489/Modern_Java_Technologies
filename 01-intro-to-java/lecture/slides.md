@@ -1,5 +1,3 @@
-class: center, middle
-
 # Въведение в Java
 
 13.10.2021
@@ -54,6 +52,8 @@ class: center, middle
 - Създаден през 1995 от James Gosling (Sun Microsystems)
 - Актуална версия: Java 17 (released 14.09.2021)
 
+
+
 ![Java logo and mascot](images/01.1-java-logo-mascot.png)
 
 ---
@@ -88,11 +88,9 @@ Hello world!
 
 ### Стандартно Java приложение
 
-.center[
-
-![Java app diagram](images/01.2-java-app.jpg)
-
-]
+<p align="center">
+  <img src="images/01.2-java-app.jpg" />
+</p>
 
 ---
 
@@ -130,7 +128,9 @@ Hello world!
 
 ### Tипове данни и променливи
 
-.center[![Variables](images/01.3-variables.jpg)]
+<p align="center">
+  <img src="images/01.3-variables.jpg" />
+</p>
 
 ---
 
@@ -283,9 +283,11 @@ int mask     = 0b1010_1010_1010;
 
 - За да ни помага компилаторът в откриването на грешки
 
-![Java app diagram](images/01.4-rocket.jpg)
+<p align="center">
+  <img src="images/01.4-rocket.jpg" />
+</p>
 
-.font-xs[През 1996, ракетата Ариана 5 експлодира след излитане поради софтуерна грешка в конвертирането на типове (опит да „набута“ 64-битово число в 16 бита).]
+*През 1996, ракетата Ариана 5 експлодира след излитане поради софтуерна грешка в конвертирането на типове (опит да „набута“ 64-битово число в 16 бита).*
 
 ---
 
@@ -793,7 +795,9 @@ String s = switch(obj) {
 
 ### Масиви
 
-.center[![Array](images/01.5-array.jpg)]
+<p align="center">
+  <img src="images/01.5-array.jpg" />
+</p>
 
 ---
 
@@ -834,7 +838,9 @@ int[][] b = {
 };
 ```
 
-![Matrix](images/01.6-matrix.jpg)
+<p align="center">
+  <img src="images/01.6-matrix.jpg" />
+</p>
 
 ---
 
@@ -875,7 +881,9 @@ Arrays.sort(a, Collections.reverseOrder()); // сортиране в обрат�
 
 ### Функции
 
-.center[![Functions](images/01.7-funcs.jpg)]
+<p align="center">
+  <img src="images/01.7-funcs.jpg" />
+</p>
 
 ---
 
@@ -900,17 +908,13 @@ String lineRead = sc.nextLine();
 ```
 
 ---
-
-.center[![Thinking in Java](images/01.8-thinking-in-java.jpg)]
-
----
-
-.center[![Effective Java](images/01.9-effective-java.jpg)]
+  
+<p align="center">
+  <img src="images/01.8-thinking-in-java.jpg" />
+</p>
 
 ---
 
-## Въпроси?
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
+<p align="center">
+  <img src="images/01.9-effective-java.jpg" />
+</p>
