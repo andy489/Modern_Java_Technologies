@@ -31,7 +31,7 @@
 ### S.O.L.I.D: Single responsibility principle
 
 <p align="center">
-  <img width="60%" src="images/12.1.1-solid-s.png" alt="Single responsibility principle" />
+  <img width="50%" src="images/12.1.1-solid-s.png" alt="Single responsibility principle" />
 </p>
 
 <br>
@@ -44,7 +44,7 @@
 ### S.O.L.I.D: Open/Closed principle
 
 <p align="center">
-  <img width="60%" src="images/12.1.2-solid-o.png" alt="Open/Closed principle" />
+  <img width="50%" src="images/12.1.2-solid-o.png" alt="Open/Closed principle" />
 </p>
 
 <br>
@@ -56,7 +56,7 @@
 ### S.O.L.I.D: Liskov substitution principle
 
 <p align="center">
-  <img width="60%" src="images/12.1.3-solid-l.png" alt="Liskov substitution principle" />
+  <img width="50%" src="images/12.1.3-solid-l.png" alt="Liskov substitution principle" />
 </p>
 
 <br>
@@ -68,7 +68,7 @@
 ### S.O.L.I.D: Interface segregation principle
 
 <p align="center">
-  <img width="60%" src="images/12.1.4-solid-i.png" alt="Interface segregation principle" />
+  <img width="50%" src="images/12.1.4-solid-i.png" alt="Interface segregation principle" />
 </p>
 
 <br>
@@ -81,7 +81,7 @@
 ### S.O.L.I.D: Dependency inversion principle
 
 <p align="center">
-  <img width="60%" src="images/12.1.5-solid-d.png" alt="Dependency inversion principle" />
+  <img width="50%" src="images/12.1.5-solid-d.png" alt="Dependency inversion principle" />
 </p>
 
 <br>
@@ -107,7 +107,7 @@
 ### Design Patterns
 
 <p align="center">
-  <img width="60%" src="images/12.2-design-patterns.jpg" alt="Design Patterns" />
+  <img width="50%" src="images/12.2-design-patterns.jpg" alt="Design Patterns" />
 </p>
 
 ---
