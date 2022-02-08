@@ -837,9 +837,3 @@ customThread.interrupt()
 Thread.interrupted() // изчиства флага след прочитането (статичен)
 isInterrupted() // не изчиства флага (не-статичен)
 ```
-
-### Полезни четива
-
-<p align="center">
-  <img width="50%" src="https://github.com/andy489/Java/blob/main/09-threads/lecture/images/09.6-java-concurrency-in-practice.jpg" alt="Java concurency in practice book" />
-</p>
