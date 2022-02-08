@@ -1,10 +1,10 @@
-class: center, middle
-
 # Ламбда изрази и Stream API
 
 01.12.2021
 
-.center[![Lambda](images/08.1-lambda.jpg)]
+<p align="center">
+  <img width="50%" src="images/08.1-lambda.jpg" alt="Lambda" />
+</p>
 
 ---
 
@@ -520,10 +520,6 @@ super::equals
 
 ---
 
-## Въпроси?
-
----
-
 ### Java Stream API
 
 - Ламбда изразите, заедно с функционалните интерфейси, разширяват възможностите на Java с елементи на функционалното програмиране
@@ -721,7 +717,9 @@ Stream.concat(stream1, stream2) // 1, 2, 2, 3, 4
 
 ### Операции върху потоци
 
-.center[![Lambda](images/08.2-stream-operations-pipeline.png)]
+<p align="center">
+  <img width="80%" src="images/08.2-stream-operations-pipeline.png" alt="Lambda" />
+</p>
 
 ```java
 // Stream API pipeline
@@ -1086,11 +1084,3 @@ System.out.println(result); // -1
 - [The Java 8 Stream API Tutorial](https://www.baeldung.com/java-8-streams)
 - [Package java.util.stream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/package-summary.html)
 - [Package java.util.function](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html)
-
----
-
-## Въпроси?
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
