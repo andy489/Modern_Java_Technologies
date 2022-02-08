@@ -1,5 +1,3 @@
-class: center, middle
-
 # Обектно-ориентирано програмиране с Java
 
 ### Част II
@@ -128,7 +126,9 @@ public class PersonBuilder {
 
 ---
 
-.center[![Stack vs. heap](images/03.0-stack-vs-heap.png)]
+<p align="center">
+  <img src="images/03.0-stack-vs-heap.png" />
+</p>
 
 ---
 
@@ -207,8 +207,6 @@ public class InitializeMe {
 
 ---
 
-class: center, middle
-
 ## Enums
 
 ---
@@ -281,8 +279,6 @@ public class EnumExample {
   - `valueОf(String name)` - връща `enum` константата по даденото име
 
 ---
-
-class: center, middle
 
 ## Records
 
@@ -629,11 +625,11 @@ final class Karate implements Kick {}
 
 ### Нововъведенията в Java в 2021
 
-.center[![Stack vs. heap](images/03.1-favorite-new-java-features.png)]
+<p align="center">
+  <img width="70%" src="images/03.1-favorite-new-java-features.png" />
+</p>
 
 ---
-
-class: center, middle
 
 ## Изключения
 
@@ -726,7 +722,9 @@ try {
 
 ### Стек на извикванията (call stack)
 
-.center[![Call stack](images/03.2-call-stack.jpg)]
+<p align="center">
+  <img width="50%" src="images/03.2-call-stack.jpg" />
+</p>
 
 ---
 
@@ -742,13 +740,17 @@ try {
 
 ### Видове изключения
 
-.center[![Exceptions](images/03.3-exceptions.jpg)]
+<p align="center">
+  <img width="50%" src="images/03.3-exceptions.jpg" />
+</p>
 
 ---
 
 ### Checked vs. unchecked exceptions
 
-.center[![Exceptions](images/03.4-exceptions.jpg)]
+<p align="center">
+  <img width="50%" src="images/03.4-exceptions.jpg" />
+</p>
 
 ---
 
@@ -890,11 +892,3 @@ Exception in thread "main" java.lang.NullPointerException:
 - Отделяме кода за обработка на грешки от останалия ⇨ става по-четим
 - "Препредаване" на грешки по стека на извикванията
 - Групиране и диференциране на различните типове грешки
-
----
-
-## Въпроси?
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
