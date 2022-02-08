@@ -1,5 +1,3 @@
-class: center, middle
-
 # HTTP, REST и JSON
 
 05.01.2022
@@ -325,7 +323,7 @@ Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
 ### HTTP vs HTTPS
 
 <p align="center">
-  <img width="85%" src="images/11.5-https.png" alt="HTTPS" />
+  <img width="60%" src="images/11.5-https.png" alt="HTTPS" />
 </p>
 
 ---
