@@ -1,10 +1,10 @@
-class: center, middle
-
 # Unit Testing & Mocking
 
 17.11.2021
 
-.center[![Relative cost of fixing defects](images/06.0-unit-testing-and-mocking.png)]
+<p align="center">
+  <img width="40%" src="images/06.0-unit-testing-and-mocking.png" alt="Relative cost of fixing defects" />
+</p>
 
 ---
 
@@ -34,13 +34,18 @@ class: center, middle
 
 ### Кога да тестваме?
 
-.center[![Relative cost of fixing defects](images/06.1-relative-cost.png)]
+
+<p align="center">
+  <img width="60%" src="images/06.1-relative-cost.png" alt="Relative cost of fixing defects" />
+</p>
 
 ---
 
 ### Тестването не е фаза, а е процес
 
-.center[![Testing is a process](images/06.2-testing-process.png)]
+<p align="center">
+  <img width="60%" src="images/06.2-testing-process.png" alt="Testing is a process" />
+</p>
 
 ---
 
@@ -72,7 +77,9 @@ class: center, middle
 
 ### Още видове тестове
 
-.center[![More test types](images/06.3-more-tests.png)]
+<p align="center">
+  <img width="70%" src="images/06.3-more-tests.png" alt="More test types" />
+</p>
 
 ---
 
@@ -112,8 +119,6 @@ class: center, middle
 
 ---
 
-class: center, middle
-
 # JUnit
 
 ---
@@ -124,7 +129,9 @@ class: center, middle
 - Open source проект в [GitHub](https://github.com/junit-team/junit5)
 - Актуалната версия е [JUnit 5](https://junit.org/junit5/)
 
-.center[![JUnit 5](images/06.3.1-junit5.jpeg)]
+<p align="center">
+  <img width="40%" src="images/06.3.1-junit5.jpeg" alt="JUnit 5" />
+</p>
 
 ---
 
@@ -414,15 +421,11 @@ public class InvestmentWalletTest {
 
 ---
 
-class: center, middle
-
 # JUnit 4 vs. JUnit 5
 
 Основните разлики, стъпките за миграция и някои предимства на новата версия може да разгледате [тук](https://blogs.oracle.com/javamagazine/post/migrating-from-junit-4-to-junit-5-important-differences-and-benefits)
 
 ---
-
-class: center, middle
 
 # Stubbing and mocking
 
@@ -724,7 +727,9 @@ public void testBuyTicket() {
 - Една от 10-те най-популярни Java библиотеки изобщо
 - Open-source
 
-.center[![Mockito](images/06.4-mockito.png)]
+<p align="center">
+  <img width="50%" src="images/06.4-mockito.png" alt="Mockito" />
+</p>
 
 ---
 
@@ -842,12 +847,6 @@ public class UserServiceTest {
 
 ### Полезни четива
 
-.center[![Practical unit testing](images/06.5-practical-unit-testing.png)]
-
----
-
-## Въпроси?
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
+<p align="center">
+  <img width="45%" src="images/06.5-practical-unit-testing.png" alt="Practical unit testing" />
+</p>
