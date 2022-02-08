@@ -1,5 +1,3 @@
-class: center, middle
-
 # Многонишково програмиране с Java
 
 15.12.2021
@@ -25,7 +23,9 @@ class: center, middle
 
 ### Какво значи *concurrent*?
 
-.center[![Meaning of Concurrent](images/09.0-meaning-of-concurrent.png)]
+<p align="center">
+  <img width="85%" src="images/09.0-meaning-of-concurrent.png" alt="Meaning of Concurrent" />
+</p>
 
 ---
 
@@ -84,7 +84,9 @@ Concurrency е много общ термин и може да се използ
 
 ### Hyper-threading и многоядрени процесори
 
-.center[![Multi-Core CPUs](images/09.1-multi-core-cpus.png)]
+<p align="center">
+  <img width="65%" src="images/09.1-multi-core-cpus.png" alt="Multi-Core CPUs" />
+</p>
 
 ---
 
@@ -99,13 +101,17 @@ Concurrency е много общ термин и може да се използ
 
 ### Едно- и многонишкови програми
 
-.center[![Multi-threading](images/09.2-multithreading.png)]
+<p align="center">
+  <img width="50%" src="images/09.2-multithreading.png" alt="Multi-threading" />
+</p>
 
 ---
 
 ### Concurrent vs. паралелно изпълнение
 
-.center[![Concurrent vs. Parallel Execution](images/09.2.1-concurrent-parallel.png)]
+<p align="center">
+  <img width="50%" src="images/09.2.1-concurrent-parallel.png" alt="Concurrent vs. Parallel Execution" />
+</p>
 
 ---
 
@@ -302,7 +308,9 @@ void yield()
 
 <br>
 
-.center[![Thread Join](images/09.3-thread-join.png)]
+<p align="center">
+  <img width="50%" src="images/09.3-thread-join.png" alt="Thread Join" />
+</p>
 
 ---
 
@@ -357,7 +365,9 @@ void setDaemon(boolean flag)
 
 ---
 
-.center[![Thread States](images/09.4-thread-states.jpg)]
+<p align="center">
+  <img width="50%" src="images/09.4-thread-states.jpg" alt="Thread States" />
+</p>
 
 ---
 
@@ -691,7 +701,9 @@ public void verifyAndWithdraw(double amount) {
 
 Получава се, когато две или повече нишки се блокират една друга, всяка от тях притежаваща ключалка, от която друга нишка има нужда, но чакайки за ключалка, която някоя от другите нишки притежава.
 
-.center[![deadlock](images/09.5-deadlock.jpg)]
+<p align="center">
+  <img width="50%" src="images/09.5-deadlock.jpg" alt="deadlock" />
+</p>
 
 ---
 
@@ -825,11 +837,3 @@ customThread.interrupt()
 Thread.interrupted() // изчиства флага след прочитането (статичен)
 isInterrupted() // не изчиства флага (не-статичен)
 ```
-
----
-
-## Въпроси?
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
