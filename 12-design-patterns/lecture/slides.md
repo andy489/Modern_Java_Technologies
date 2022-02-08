@@ -1,5 +1,3 @@
-class: center, middle
-
 # Design Patterns
 
 12.01.2022
@@ -24,13 +22,17 @@ class: center, middle
 
 ### S.O.L.I.D дизайн принципи
 
-.center[![S.O.L.I.D.](images/12.1-solid.png)]
+<p align="center">
+  <img width="70%" src="images/12.1-solid.png" alt="S.O.L.I.D." />
+</p>
 
 ---
 
 ### S.O.L.I.D: Single responsibility principle
 
-.center[![Single responsibility principle](images/12.1.1-solid-s.png)]
+<p align="center">
+  <img width="70%" src="images/12.1.1-solid-s.png" alt="Single responsibility principle" />
+</p>
 
 <br>
 
@@ -41,7 +43,9 @@ class: center, middle
 
 ### S.O.L.I.D: Open/Closed principle
 
-.center[![Open/Closed principle](images/12.1.2-solid-o.png)]
+<p align="center">
+  <img width="70%" src="images/12.1.2-solid-o.png" alt="Open/Closed principle" />
+</p>
 
 <br>
 
@@ -51,7 +55,9 @@ class: center, middle
 
 ### S.O.L.I.D: Liskov substitution principle
 
-.center[![Liskov substitution principle](images/12.1.3-solid-l.png)]
+<p align="center">
+  <img width="70%" src="images/12.1.3-solid-l.png" alt="Liskov substitution principle" />
+</p>
 
 <br>
 
@@ -61,7 +67,9 @@ class: center, middle
 
 ### S.O.L.I.D: Interface segregation principle
 
-.center[![Interface segregation principle](images/12.1.4-solid-i.png)]
+<p align="center">
+  <img width="70%" src="images/12.1.4-solid-i.png" alt="Interface segregation principle" />
+</p>
 
 <br>
 
@@ -72,7 +80,9 @@ class: center, middle
 
 ### S.O.L.I.D: Dependency inversion principle
 
-.center[![Dependency inversion principle](images/12.1.5-solid-d.png)]
+<p align="center">
+  <img width="70%" src="images/12.1.5-solid-d.png" alt="Dependency inversion principle" />
+</p>
 
 <br>
 
@@ -80,8 +90,6 @@ class: center, middle
 - one should "depend upon abstractions, not concretions"
 
 ---
-
-class: center, middle
 
 # Design Patterns
 
@@ -98,7 +106,9 @@ class: center, middle
 
 ### Design Patterns
 
-.center[![Design Patterns](images/12.2-design-patterns.jpg)]
+<p align="center">
+  <img width="70%" src="images/12.2-design-patterns.jpg" alt="Design Patterns" />
+</p>
 
 ---
 
@@ -139,15 +149,15 @@ class: center, middle
 
 ---
 
-class: center, middle
-
 # Creational Design Patterns
 
 ---
 
 ### Factory
 
-.center[![Factory](images/12.3-factory.png)]
+<p align="center">
+  <img width="70%" src="images/12.3-factory.png" alt="Factory" />
+</p>
 
 ---
 
@@ -162,13 +172,17 @@ class: center, middle
 
 ### Factory
 
-.center[![Factory](images/12.4-factory-demo-diagram.png)]
+<p align="center">
+  <img width="70%" src="images/12.4-factory-demo-diagram.png" alt="Factory" />
+</p>
 
 ---
 
 ### Builder
 
-.center[![Builder](images/12.5-builder.png)]
+<p align="center">
+  <img width="70%" src="images/12.5-builder.png" alt="Builder" />
+</p>
 
 ---
 
@@ -191,7 +205,9 @@ class: center, middle
 
 ### Singleton
 
-.center[![Singleton](images/12.6-singleton.png)]
+<p align="center">
+  <img width="70%" src="images/12.6-singleton.png" alt="Singleton" />
+</p>
 
 ---
 
@@ -213,15 +229,15 @@ class: center, middle
 
 ---
 
-class: center, middle
-
 # Structural Design Patterns
 
 ---
 
 ### Flyweight
 
-.center[![Flyweight](images/12.7-flyweight.png)]
+<p align="center">
+  <img width="70%" src="images/12.7-flyweight.png" alt="Flyweight" />
+</p>
 
 ---
 
@@ -249,15 +265,15 @@ class: center, middle
 
 ---
 
-class: center, middle
-
 # Behavioral Design Patterns
 
 ---
 
 ### Iterator
 
-.center[![Iterator](images/12.8-iterator.png)]
+<p align="center">
+  <img width="70%" src="images/12.8-iterator.png" alt="Iterator" />
+</p>
 
 ---
 
@@ -271,13 +287,17 @@ class: center, middle
 
 ### Iterator
 
-.center[![Iterator](images/12.9-iterator-demo-diagram.png)]
+<p align="center">
+  <img width="70%" src="images/12.9-iterator-demo-diagram.png" alt="Iterator" />
+</p>
 
 ---
 
 ### Command
 
-.center[![Command](images/12.10-command.png)]
+<p align="center">
+  <img width="70%" src="images/12.10-command.png" alt="Command" />
+</p>
 
 ---
 
@@ -291,13 +311,17 @@ class: center, middle
 
 ### Command
 
-.center[![Command](images/12.11-command-demo-diagram.png)]
+<p align="center">
+  <img width="70%" src="images/12.11-command-demo-diagram.png" alt="Command" />
+</p>
 
 ---
 
 ### Observer
 
-.center[![Observer](images/12.12-observer.png)]
+<p align="center">
+  <img width="70%" src="images/12.12-observer.png" alt="Observer" />
+</p>
 
 ---
 
@@ -312,13 +336,17 @@ class: center, middle
 
 ### Observer
 
-.center[![Observer](images/12.13-observer-demo-diagram.png)]
+<p align="center">
+  <img width="70%" src="images/12.13-observer-demo-diagram.png" alt="Observer" />
+</p>
 
 ---
 
 ### Strategy
 
-.center[![Strategy](images/12.14-strategy.png)]
+<p align="center">
+  <img width="70%" src="images/12.14-strategy.png" alt="Strategy" />
+</p>
 
 ---
 
@@ -335,11 +363,3 @@ class: center, middle
 - може да разгледате приложените [code snippets](https://github.com/fmi/java-course/tree/master/12-design-patterns/snippets/design-patterns)
 - хубави обяснения и примери с псевдокод [Refactoring Guru: Design Patterns](https://refactoring.guru/design-patterns)
 - тук може да намерите информация и примери с код на Java за голям брой design patterns (не само 23-те от *Gang-of-Four*): [Java Design Patterns](https://github.com/iluwatar/java-design-patterns)
-
----
-
-## Въпроси?
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
