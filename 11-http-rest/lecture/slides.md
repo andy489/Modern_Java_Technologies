@@ -25,7 +25,9 @@ class: center, middle
 
 ### Как работи Интернет?
 
-.center[![HTTP request](images/11.1-http-request.png)]
+<p align="center">
+  <img width="85%" src="images/11.1-http-request.png" alt="HTTP request" />
+</p>
 
 ---
 
@@ -100,7 +102,9 @@ Host: en.wikipedia.org
 
 ### HTTP заявка - пример
 
-.center[![HTTP sample request](images/11.2-http-sample-request.png)]
+<p align="center">
+  <img width="85%" src="images/11.2-http-sample-request.png" alt="HTTP sample request" />
+</p>
 
 ---
 
@@ -108,7 +112,9 @@ Host: en.wikipedia.org
 
 Унифициран локатор на ресурси (URL) - стандартизиран адрес на даден мрежов ресурс (документ или страница).
 
-.center[![URL](images/11.3-url.png)]
+<p align="center">
+  <img width="85%" src="images/11.3-url.png" alt="URL" />
+</p>
 
 ---
 
@@ -153,7 +159,9 @@ Server: Apache
 
 ### HTTP отговор - пример
 
-.center[![HTTP response](images/11.4-http-sample-response.png)]
+<p align="center">
+  <img width="85%" src="images/11.4-http-sample-response.png" alt="HTTP response" />
+</p>
 
 ---
 
@@ -316,7 +324,9 @@ Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
 
 ### HTTP vs HTTPS
 
-.center[![HTTPS](images/11.5-https.png)]
+<p align="center">
+  <img width="85%" src="images/11.5-https.png" alt="HTTPS" />
+</p>
 
 ---
 
@@ -343,7 +353,9 @@ Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
 
 <br>
 
-.center[![HTTP2 Multiplexing](images/11.6-http2-multiplexing.png)]
+<p align="center">
+  <img width="85%" src="images/11.6-http2-multiplexing.png" alt="HTTP2 Multiplexing" />
+</p>
 
 ---
 
@@ -351,7 +363,9 @@ Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
 
 <br>
 
-.center[![HTTP2 Response Time](images/11.7-http2-response-time.png)]
+<p align="center">
+  <img width="85%" src="images/11.7-http2-response-time.png" alt="HTTP2 Response Time" />
+</p>
 
 ---
 
@@ -362,8 +376,6 @@ Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
 - HttpClient-a в Java 11
 
 ---
-
-class: center, middle
 
 # REST
 
@@ -479,8 +491,6 @@ class: center, middle
 - Изчерпателен списък с публични REST API-та - [public-apis/public-apis](https://github.com/public-apis/public-apis)
 
 ---
-
-class: center, middle
 
 # JSON
 
@@ -656,8 +666,6 @@ System.out.println(devsAgain.size()); // 2
 ```
 
 ---
-
-class: center, middle
 
 ## Java HTTP Client
 
@@ -851,11 +859,3 @@ client.sendAsync(request, BodyHandlers.ofString())
 - [A closer look at the Java 11 HTTP Client](https://golb.hplar.ch/2019/01/java-11-http-client.html)
 
 - [Exploring the New HTTP Client in Java](https://www.baeldung.com/java-9-http-client)
-
----
-
-## Въпроси?
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
