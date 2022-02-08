@@ -1,5 +1,3 @@
-class: center, middle
-
 # Многонишково програмиране с Java (част II)
 
 22.12.2021
@@ -78,7 +76,9 @@ public interface Future<V> {
 - Kонцепция в многонишковото програмиране, при която "рециклираме" нишките след края на тяхното изпълнение, с цел оптимизация.
 - Отделните `Runnable` или `Callable` обекти се третират като "задачи" и се трупат в опашка, и когато има свободни нишки в pool-а, те изпълняват задачите, на базата на зададени правила.
 
-.center[![test](https://upload.wikimedia.org/wikipedia/commons/0/0c/Thread_pool.svg)]
+<p align="center">
+  <img width="50%" src="https://github.com/andy489/Java/blob/main/09-threads/lecture/images/09.7-thread-pool.png" alt="thread pool" />
+</p>
 
 ---
 
@@ -214,23 +214,27 @@ BlockingQueue<String> queue = new ArrayBlockingQueue<>(4);
 
 ### Полезни четива
 
-.center[![Java Concurrency in Practice](images/09.6-java-concurrency-in-practice.jpg)]
+<p align="center">
+  <img width="50%" src="images/09.6-java-concurrency-in-practice.jpg" alt="Java Concurrency in Practice" />
+</p>
 
 ---
 
 ### Теория vs. практика
 
-.center[![dogs-meme](https://cdn-images-1.medium.com/max/1600/0*9LJYn6Tlc8q3qA3U.png)]
+<p align="center">
+  <img width="80%" src="https://github.com/andy489/Java/blob/main/09-threads/lecture/images/09.8-dog-meme.png" alt="dogs meme" />
+</p>
 
 ---
-
-class: center, middle
 
 # Мрежово програмиране с Java
 
 22.12.2021
 
-.center[![Networking](images/10.0-networking.jpg)]
+<p align="center">
+  <img width="70%" src="images/10.0-networking.jpg" alt="Networking" />
+</p>
 
 ---
 
@@ -252,7 +256,9 @@ class: center, middle
 
 <br>
 
-.center[![Client-Server](images/10.4-client-server.png)]
+<p align="center">
+  <img width="70%" src="images/10.4-client-server.png" alt="Client-Server" />
+</p>
 
 ---
 
@@ -260,7 +266,9 @@ class: center, middle
 
 Peer-to-peer е разпределен архитектурен модел на приложение, при който задачите се разпределят по еднакъв начин между всички участници (peer, node). Всеки участник е едновременно и клиент, и сървър.
 
-.center[![Peer-to-Peer](images/10.5-peer-to-peer.png)]
+<p align="center">
+  <img width="70%" src="images/10.5-peer-to-peer.png" alt="Peer-to-Peer" />
+</p>
 
 ---
 
@@ -316,7 +324,9 @@ Peer-to-peer е разпределен архитектурен модел на 
 
 ### Open Systems Interconnection (OSI) модел
 
-.center[![OSI Model](images/10.1-osi-model.png)]
+<p align="center">
+  <img width="100%" src="images/10.1-osi-model.png" alt="OSI Model" />
+</p>
 
 ---
 
@@ -409,7 +419,9 @@ Peer-to-peer е разпределен архитектурен модел на 
 
 <br>
 
-.center[![IP v4 v6](images/10.2-ipv4-ipv6.png)]
+<p align="center">
+  <img width="100%" src="images/10.2-ipv4-ipv6.png" alt="IP v4 v6" />
+</p>
 
 ---
 
@@ -539,31 +551,41 @@ OutputStream getOutputStream() // връща изходен поток за пи
 
 ### Сокети (Sockets)
 
-.center[![Socket Calls](images/10.3-network-sockets.png)]
+<p align="center">
+  <img width="100%" src="images/10.3-network-sockets.png" alt="Socket Calls" />
+</p>
 
 ---
 
 ### java.net | TCP комуникация
 
-.center[![TCP Flow](images/10.7-java-net-tcp-flow.png)]
+<p align="center">
+  <img width="100%" src="images/10.7-java-net-tcp-flow.png" alt="TCP Flow" />
+</p>
 
 ---
 
 ### java.net: blocking мрежова комуникация
 
-.center[![Blocking IO](images/10.6-java-net-blocking-io.png)]
+<p align="center">
+  <img width="100%" src="images/10.6-java-net-blocking-io.png" alt="Blocking IO" />
+</p>
 
 ---
 
 ### java.net | Клиент-сървър архитектура
 
-.center[![Java.net Architecture](images/10.8-java-net-architecture.png)]
+<p align="center">
+  <img width="100%" src="images/10.8-java-net-architecture.png" alt="Java.net Architecture" />
+</p>
 
 ---
 
 ### java.net | Архитектура
 
-.center[![Java.net Architecture](images/10.8.1-java-net-multithreading.png)]
+<p align="center">
+  <img width="100%" src="images/10.8.1-java-net-multithreading.png" alt="Java.net Architecture" />
+</p>
 
 ---
 
@@ -664,7 +686,9 @@ ByteBuffer put(int index, byte b)
 
 ### java.nio | Как работи буферът
 
-.center[![NIO Buffer Operations](images/10.9-nio-buffer-operations.png)]
+<p align="center">
+  <img width="100%" src="images/10.9-nio-buffer-operations.png" alt="NIO Buffer Operations" />
+</p>
 
 ---
 
@@ -692,7 +716,9 @@ ByteBuffer buffer = ByteBuffer.allocate(1024); // indirect buffer
 
 ### Java I/O performance
 
-.center[![Java IO Performance](images/10.10-java-io-performance.png)]
+<p align="center">
+  <img width="100%" src="images/10.10-java-io-performance.png" alt="Java IO Performance" />
+</p>
 
 ---
 
@@ -748,7 +774,9 @@ int write(ByteBuffer src)
 
 Селекторите осигуряват възможността за избор (селектиране) на канали според готовността им за I/O операции (readiness selection), което е предпоставка за multiplexed I/O, т.е. с една нишка да обслужваме голям брой канали.
 
-.center[![Selectors and Channels](images/10.11-selectors-and-channels.jpg)]
+<p align="center">
+  <img width="100%" src="images/10.11-selectors-and-channels.jpg" alt="Selectors and Channels" />
+</p>
 
 ---
 
@@ -909,49 +937,65 @@ while (buf.hasRemaining()) {
 
 ### java.nio | Изпращане на данни
 
-.center[![Java NIO Sending](images/10.11.1a-java-nio-sending.png)]
+<p align="center">
+  <img width="100%" src="images/10.11.1a-java-nio-sending.png" alt="Java NIO Sending" />
+</p>
 
 ---
 
 ### java.nio | Изпращане на данни
 
-.center[![Java NIO Sending](images/10.11.1b-java-nio-sending.png)]
+<p align="center">
+  <img width="100%" src="images/10.11.1b-java-nio-sending.png" alt="Java NIO Sending" />
+</p>
 
 ---
 
 ### java.nio | Изпращане на данни
 
-.center[![Java NIO Sending](images/10.11.1c-java-nio-sending.png)]
+<p align="center">
+  <img width="100%" src="images/10.11.1c-java-nio-sending.png" alt="Java NIO Sending" />
+</p>
 
 ---
 
 ### java.nio | Изпращане на данни
 
-.center[![Java NIO Sending](images/10.11.1d-java-nio-sending.png)]
+<p align="center">
+  <img width="100%" src="images/10.11.1d-java-nio-sending.png" alt="Java NIO Sending" />
+</p>
 
 ---
 
 ### java.nio | Получаване на данни
 
-.center[![Java NIO Receiving](images/10.11.2a-java-nio-receiving.png)]
+<p align="center">
+  <img width="100%" src="images/10.11.2a-java-nio-receiving.png" alt="Java NIO Receiving" />
+</p>
 
 ---
 
 ### java.nio | Получаване на данни
 
-.center[![Java NIO Receiving](images/10.11.2b-java-nio-receiving.png)]
+<p align="center">
+  <img width="100%" src="images/10.11.2b-java-nio-receiving.png" alt="Java NIO Receiving" />
+</p>
 
 ---
 
 ### java.nio | Получаване на данни
 
-.center[![Java NIO Receiving](images/10.11.2c-java-nio-receiving.png)]
+<p align="center">
+  <img width="100%" src="images/10.11.2c-java-nio-receiving.png" alt="Java NIO Receiving" />
+</p>
 
 ---
 
 ### java.nio | Получаване на данни
 
-.center[![Java NIO Receiving](images/10.11.2d-java-nio-receiving.png)]
+<p align="center">
+  <img width="100%" src="images/10.11.2d-java-nio-receiving.png" alt="Java NIO Receiving" />
+</p>
 
 ---
 
@@ -965,44 +1009,46 @@ while (buf.hasRemaining()) {
 
 ### java.nio | Архитектура
 
-.center[![Java NIO Architecture](images/10.13-java-nio-architecture-2.png)]
+<p align="center">
+  <img width="100%" src="images/10.13-java-nio-architecture-2.png" alt="Java NIO Architecture" />
+</p>
 
 ---
 
 ### java.nio | Архитектура
 
-.center[![Java NIO Architecture](images/10.14-java-nio-architecture-3.png)]
+<p align="center">
+  <img width="100%" src="images/10.14-java-nio-architecture-3.png" alt="Java NIO Architecture" />
+</p>
 
 ---
 
 ### java.nio | Архитектура
 
-.center[![Java NIO Architecture](images/10.15-java-nio-architecture-4.png)]
+<p align="center">
+  <img width="100%" src="images/10.15-java-nio-architecture-4.png" alt="Java NIO Architecture" />
+</p>
 
 ---
 
 ### java.nio | Архитектура
 
-.center[![Java NIO Architecture](images/10.16-java-nio-architecture-5.png)]
+<p align="center">
+  <img width="100%" src="images/10.16-java-nio-architecture-5.png" alt="Java NIO Architecture" />
+</p>
 
 ---
 
 ### IO vs. NIO
 
-.center[![IO vs. NIO](images/10.17-io-vs-nio.png)]
+<p align="center">
+  <img width="100%" src="images/10.17-io-vs-nio.png" alt="IO vs. NIO" />
+</p>
 
 ---
 
 ### Полезни четива
 
-.center[![Java NIO](images/10.18-java-nio-oreilly.jpg)]
-
----
-
-## Въпроси?
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
-
-.center[![Merry Christmas](images/10.19-merry-xmas.jpg)]
+<p align="center">
+  <img width="50%" src="images/10.18-java-nio-oreilly.jpg" alt="Java NIO" />
+</p>
