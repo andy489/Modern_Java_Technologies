@@ -366,7 +366,7 @@ void setDaemon(boolean flag)
 ---
 
 <p align="center">
-  <img width="75%" src="images/09.4-thread-states.jpg" alt="Thread States" />
+  <img width="85%" src="images/09.4-thread-states.jpg" alt="Thread States" />
 </p>
 
 ---
