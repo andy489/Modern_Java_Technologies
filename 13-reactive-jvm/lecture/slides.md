@@ -1,5 +1,3 @@
-class: center, middle
-
 # Reactive Programming
 # Java виртуалната машина
 
@@ -78,21 +76,17 @@ class: center, middle
 
 <br>
 
-.center[![Reactive Systems](images/13.0-reactive-systems.png)]
+<p align="center">
+  <img width="85%" src="images/13.0-reactive-systems.png" alt="Reactive Systems" />
+</p>
 
 ---
-
-## Въпроси?
-
----
-
-class: center, middle
 
 # The Java Virtual Machine
 
-19.01.2022
-
-.center[![Machine](images/13.1-machine.png)]
+<p align="center">
+  <img width="85%" src="images/13.1-machine.png" alt="Machine" />
+</p>
 
 ---
 
@@ -110,13 +104,17 @@ class: center, middle
 
 ### Архитектура на HotSpot JVM
 
-.center[![JVM Architecture](images/13.2-jvm-overall-architecture.png)]
+<p align="center">
+  <img width="85%" src="images/13.2-jvm-overall-architecture.png" alt="JVM Architecture" />
+</p>
 
 ---
 
 ### Classloader подсистема
 
-.center[![Classloader Subsystem](images/13.3-classloader-subsystem.png)]
+<p align="center">
+  <img width="85%" src="images/13.3-classloader-subsystem.png" alt="Classloader Subsystem" />
+</p>
 
 ---
 
@@ -147,7 +145,9 @@ ClassFile {
 
 ### Съдържание на .class файл
 
-.center[![Class File Content](images/13.4-class-file-hex.png)]
+<p align="center">
+  <img width="85%" src="images/13.4-class-file-hex.png" alt="Class File Content" />
+</p>
 
 ---
 
@@ -161,13 +161,17 @@ ClassFile {
 
 ### Runtime Data подсистема
 
-.center[![Runtime Data Subsystem](images/13.5-runtime-data-subsystem.png)]
+<p align="center">
+  <img width="85%" src="images/13.5-runtime-data-subsystem.png" alt="Runtime Data Subsystem" />
+</p>
 
 ---
 
 ### Организация на паметта
 
-.center[![Memory Organization](images/13.6-jvm-memory.png)]
+<p align="center">
+  <img width="85%" src="images/13.6-jvm-memory.png" alt="Memory Organization" />
+</p>
 
 ---
 
@@ -175,13 +179,17 @@ ClassFile {
 
 <br>
 
-.center[![Memory During Method Call](images/13.7-memory-during-method-execution.png)]
+<p align="center">
+  <img width="85%" src="images/13.7-memory-during-method-execution.png" alt="Memory During Method Call" />
+</p>
 
 ---
 
 ### Execution подсистема
 
-.center[![Execution Subsystem](images/13.8-execution-subsystem.png)]
+<p align="center">
+  <img width="85%" src="images/13.8-execution-subsystem.png" alt="Execution Subsystem" />
+</p>
 
 ---
 
@@ -232,8 +240,6 @@ ClassFile {
 9. Унищожава се виртуалната машина
 
 ---
-
-class: center, middle
 
 ## Garbage Collection
 
@@ -292,7 +298,9 @@ class: center, middle
 
 <br>
 
-.center[![Circular Reference](images/13.9-circular-reference.png)]
+<p align="center">
+  <img width="85%" src="images/13.9-circular-reference.png" alt="Circular Reference" />
+</p>
 
 ---
 
@@ -316,7 +324,9 @@ class: center, middle
 
 ### Tracing GC
 
-.center[![Tracing GC](images/13.10-tracing-gc.png)]
+<p align="center">
+  <img width="85%" src="images/13.10-tracing-gc.png" alt="Tracing GC" />
+</p>
 
 ---
 
@@ -347,7 +357,9 @@ class: center, middle
 
 ### Mark-sweep-compact GC
 
-.center[![Mark Sweep Compact GC](images/13.11-mark-sweep-compact-gc.png)]
+<p align="center">
+  <img width="85%" src="images/13.11-mark-sweep-compact-gc.png" alt="Mark Sweep Compact GC" />
+</p>
 
 ---
 
@@ -364,7 +376,9 @@ class: center, middle
 
 Памет има, но не в достатъчно големи парчета.
 
-.center[![Memory Fragmentation](images/13.12-fragmentation-after-gc.png)]
+<p align="center">
+  <img width="85%" src="images/13.12-fragmentation-after-gc.png" alt="Memory Fragmentation" />
+</p>
 
 ---
 
@@ -379,7 +393,9 @@ class: center, middle
 
 ### Compaction
 
-.center[![Memory Compaction](images/13.13-memory-compaction.png)]
+<p align="center">
+  <img width="85%" src="images/13.13-memory-compaction.png" alt="Memory Compaction" />
+</p>
 
 ---
 
@@ -393,7 +409,9 @@ class: center, middle
     - всички достигнати (т.е. живи) обекти се местят от "from" региона в "to"
     - после GC обръща ролите на "from" и "to" регионите
 
-.center[![Copying GC](images/13.14-copying-gc.png)]
+<p align="center">
+  <img width="85%" src="images/13.14-copying-gc.png" alt="Copying GC" />
+</p>
 
 ---
 
@@ -421,7 +439,9 @@ class: center, middle
 
 ### Serial, Parallel & Concurrent GC
 
-.center[![Serial Parallel Concurrent GC](images/13.16-serial-parallel-concurrent-gc.png)]
+<p align="center">
+  <img width="85%" src="images/13.16-serial-parallel-concurrent-gc.png" alt="Serial Parallel Concurrent GC" />
+</p>
 
 ---
 
@@ -443,7 +463,9 @@ class: center, middle
 
 <br>
 
-.center[![Two Region GC](images/13.15-two-region-gc.png)]
+<p align="center">
+  <img width="85%" src="images/13.15-two-region-gc.png" alt="Two Region GC" />
+</p>
 
 ---
 
@@ -490,7 +512,9 @@ class: center, middle
 - Heap-ът се разделя на множество парчета с еднакъв размер, всеки заемащ последователен регион от паметта
 - На някои множества от парчета се присвояват еднакви роли (eden, survivor, old), но няма фиксиран размер за тях
 
-.center[![Multi Region GC](images/13.17-multi-region-gc.png)]
+<p align="center">
+  <img width="85%" src="images/13.17-multi-region-gc.png" alt="Multi Region GC" />
+</p>
 
 ---
 
@@ -530,11 +554,15 @@ class: center, middle
 
 ## Оттук накъде?
 
-.center[![Duke Thinking](images/13.18-duke-thinking.png)]
+<p align="center">
+  <img width="25%" src="images/13.18-duke-thinking.png" alt="Duke Thinking" />
+</p>
 
 ---
 
-.center[![Where To Now](images/13.19-where-to-now.png)]
+<p align="center">
+  <img width="85%" src="images/13.19-where-to-now.png" alt="Where To Now" />
+</p>
 
 ---
 
@@ -557,18 +585,6 @@ class: center, middle
 
 <br>
 
-.center[![BGJUG](images/13.20-bgjug.png)]
-
----
-
-## На добър час!
-
-.center[![Goodbye](images/13.21-goodbye.png)]
-
----
-
-## Въпроси
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
+<p align="center">
+  <img width="65%" src="images/13.20-bgjug.png" alt="BGJUG" />
+</p>
