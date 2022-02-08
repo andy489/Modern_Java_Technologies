@@ -1,16 +1,18 @@
-class: center, middle
-
 # Качествен (Clean) Code
 
 03.11.2021
 
-.center[![Clean Code Zen](images/04.1-clean-code-zen.png)]
+<p align="center">
+  <img width="80%" src="images/04.1-clean-code-zen.png" />
+</p>
 
 ---
 
 ### Как мерим качеството на кода?
 
-.center[![Code Quality](images/04.2-wtfs-per-min.png)]
+<p align="center">
+  <img width="50%" src="images/04.2-wtfs-per-min.png" />
+</p>
 
 ---
 
@@ -367,7 +369,9 @@ public static void main(String... args) {
 
 <br><br>
 
-.center[![Popular Java Code Conventions](images/04.3-oracle-google.png)]
+<p align="center">
+  <img width="50%" src="images/04.3-oracle-google.png" />
+</p>
 
 ---
 
@@ -387,19 +391,21 @@ public static void main(String... args) {
 
 <br>
 
-.center[![Static Code Analyzers](images/04.4-static-code-analyzers.png)]
+<p align="center">
+  <img width="70%" src="images/04.4-static-code-analyzers.png" />
+</p>
 
 ---
 
 ### planetgeek.ch | Clean Code Cheat Sheet
 
-.center[[![PlanetGeek Cheat Sheet](images/04.5.1-planetgeek-cheatsheet.png)](https://www.planetgeek.ch/wp-content/uploads/2014/11/Clean-Code-V2.4.pdf)]
+[![PlanetGeek Cheat Sheet](images/04.5.1-planetgeek-cheatsheet.png)](https://www.planetgeek.ch/wp-content/uploads/2014/11/Clean-Code-V2.4.pdf)
 
 ---
 
 ### Библията
 
-.center[![Clean Code](images/04.5-clean-code.png)]
+![Clean Code](images/04.5-clean-code.png)
 
 ---
 
@@ -412,21 +418,13 @@ public static void main(String... args) {
 
 ---
 
-## Въпроси?
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
-
----
-
-class: center, middle
-
 ## Структури от данни
 
 03.11.2021
 
-.center[![Collections](images/04.6-collections.png)]
+<p align="center">
+  <img width="55%" src="images/04.6-collections.png" />
+</p>
 
 ---
 
@@ -519,30 +517,33 @@ public interface Iterable<T> {
 - Хеш таблици
 - Дървета
 
-.center[![Basic Data Structures | 70%](images/04.7-basic-data-structures.png)]
+<p align="center">
+  <img width="40%" src="images/04.7-basic-data-structures.png" />
+</p>
 
 ---
 
 ### Big-O Complexity Chart
 
-[.center[![Big-O Complexity Chart](images/04.7.1-big-o-chart.jpeg)]](https://www.bigocheatsheet.com/)
+
+[![Big-O Complexity Chart](images/04.7.1-big-o-chart.jpeg)](https://www.bigocheatsheet.com/)
 
 ---
 
-[.center[![Data Structures Complexity Cheatsheet](images/04.7.2-complexity-cheatsheet.png
-)]](https://www.bigocheatsheet.com/)
-
----
-
-### Колекции
-
-.center[![Collection diagrams](images/04.8-collections-diagram.png)]
+[![Data Structures Complexity Cheatsheet](images/04.7.2-complexity-cheatsheet.png
+)](https://www.bigocheatsheet.com/)
 
 ---
 
 ### Колекции
 
-.center[![Map hierarchy](images/04.9-java-map-hierarchy.png)]
+![Collection diagrams](images/04.8-collections-diagram.png)
+
+---
+
+### Колекции
+
+![Map hierarchy](images/04.9-java-map-hierarchy.png)
 
 ---
 
@@ -749,7 +750,9 @@ public interface Comparator<T> {
 
 ### `LinkedHashSet`
 
-.center[![LinkedHashSet](images/04.12.0-linkedhashset.png)]
+<p align="center">
+  <img width="50%" src="images/04.12.0-linkedhashset.png" />
+</p>
 
 ```java
 Set<Character> sc = new LinkedHashSet<>();
@@ -760,7 +763,9 @@ Collections.addAll(sc, 'a', 'b', 'j');
 
 ### Алгоритмична сложност на основните операции
 
-![SetComplexities](images/04.12-setperformance.png)
+<p align="center">
+  <img width="80%" src="images/04.12-setperformance.png" />
+</p>
 
 <small>*h* - капацитет на хеш таблицата</small>
 
@@ -815,7 +820,9 @@ Collection<V> values()
 
 ### Алгоритмична сложност на основните операции
 
-![MapComplexities](images/04.13-mapperformance.png)
+<p align="center">
+  <img width="80%" src="images/04.13-mapperformance.png" />
+</p>
 
 <small>*h* - капацитет на хеш таблицата</small>
 
@@ -830,7 +837,9 @@ Collection<V> values()
 
 ### Java Map/Collection Cheat Sheet
 
-.center[![Cheat sheet](images/04.14-cheat-sheet.png)]
+<p align="center">
+  <img width="80%" src="images/04.14-cheat-sheet.png" />
+</p>
 
 ---
 
@@ -1099,11 +1108,3 @@ namesAgain.add("Nicky"); // will throw UnsupportedOperationException at runtime
 - Заемат по-малко памет от modifiable събратята си
 - Не могат да съдържат null елементи
 - При идентично съдържание, factory методите могат да връщат нови инстанции на дадената колекция или референции към вече съществуващи
-
----
-
-## Въпроси?
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
