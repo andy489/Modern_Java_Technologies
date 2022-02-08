@@ -102,7 +102,7 @@ Concurrency е много общ термин и може да се използ
 ### Едно- и многонишкови програми
 
 <p align="center">
-  <img width="50%" src="images/09.2-multithreading.png" alt="Multi-threading" />
+  <img width="70%" src="images/09.2-multithreading.png" alt="Multi-threading" />
 </p>
 
 ---
@@ -110,7 +110,7 @@ Concurrency е много общ термин и може да се използ
 ### Concurrent vs. паралелно изпълнение
 
 <p align="center">
-  <img width="50%" src="images/09.2.1-concurrent-parallel.png" alt="Concurrent vs. Parallel Execution" />
+  <img width="70%" src="images/09.2.1-concurrent-parallel.png" alt="Concurrent vs. Parallel Execution" />
 </p>
 
 ---
@@ -309,7 +309,7 @@ void yield()
 <br>
 
 <p align="center">
-  <img width="50%" src="images/09.3-thread-join.png" alt="Thread Join" />
+  <img width="38%" src="images/09.3-thread-join.png" alt="Thread Join" />
 </p>
 
 ---
@@ -366,7 +366,7 @@ void setDaemon(boolean flag)
 ---
 
 <p align="center">
-  <img width="50%" src="images/09.4-thread-states.jpg" alt="Thread States" />
+  <img width="70%" src="images/09.4-thread-states.jpg" alt="Thread States" />
 </p>
 
 ---
@@ -702,7 +702,7 @@ public void verifyAndWithdraw(double amount) {
 Получава се, когато две или повече нишки се блокират една друга, всяка от тях притежаваща ключалка, от която друга нишка има нужда, но чакайки за ключалка, която някоя от другите нишки притежава.
 
 <p align="center">
-  <img width="50%" src="images/09.5-deadlock.jpg" alt="deadlock" />
+  <img width="35%" src="images/09.5-deadlock.jpg" alt="deadlock" />
 </p>
 
 ---
