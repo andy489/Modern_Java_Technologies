@@ -1,10 +1,10 @@
-class: center, middle
-
 # Входно-изходни потоци и файлова система
 
 24.11.2021
 
-.center[![IO Streams](images/07.1-io-streams.png)]
+<p align="center">
+  <img width="70%" src="images/07.1-io-streams.png" alt="IO Streams" />
+</p>
 
 ---
 
@@ -27,7 +27,9 @@ class: center, middle
 
 ### Какво е поточна линия?
 
-.center[![Manufacturing Line](https://learnbookme.files.wordpress.com/2016/12/alienation.gif)]
+<p align="center">
+  <img width="60%" src="https://learnbookme.files.wordpress.com/2016/12/alienation.gif" alt="Manufacturing Line" />
+</p>
 
 ---
 
@@ -44,7 +46,9 @@ class: center, middle
 
 <br>
 
-.center[![Java App I/O](images/07.3-java-app-io.png)]
+<p align="center">
+  <img width="75%" src="images/07.3-java-app-io.png" alt="Java App I/O" />
+</p>
 
 ---
 
@@ -52,7 +56,9 @@ class: center, middle
 
 <br>
 
-.center[![Java I/O Root Abstract Classes](images/07.4-java-io-root-abstract-classes.png)]
+<p align="center">
+  <img width="75%" src="images/07.4-java-io-root-abstract-classes.png" alt="Java I/O Root Abstract Classes" />
+</p>
 
 Намират се в пакета `java.io`
 
@@ -83,25 +89,33 @@ class: center, middle
 
 ### Видове потоци
 
-.center[![Java I/O Class Hierarchy](images/07.4.1-java-io-class-hierarchy.jpg)]
+<p align="center">
+  <img width="95%" src="images/07.4.1-java-io-class-hierarchy.jpg" alt="Java I/O Class Hierarchy" />
+</p>
 
 ---
 
 ### Видове потоци според нуждата
 
-.center[![Java I/O Root Abstract Classes](images/07.5-java-io-classes.png)]
+<p align="center">
+  <img width="85%" src="images/07.5-java-io-classes.png" alt="Java I/O Root Abstract Classes" />
+</p>
 
 ---
 
 ### Видове Byte потоци
 
-.center[![Java Byte I/O Class Hierarchy](images/07.6-java-byte-io-classes-hierarchy.png)]
+<p align="center">
+  <img width="95%" src="images/07.6-java-byte-io-classes-hierarchy.png" alt="Java Byte I/O Class Hierarchy" />
+</p>
 
 ---
 
 ### Видове Character потоци
 
-.center[![Java Char I/O Class Hierarchy](images/07.7-java-char-io-classes-hierarchy.png)]
+<p align="center">
+  <img width="95%" src="images/07.7-java-char-io-classes-hierarchy.png" alt="Java Char I/O Class Hierarchy" />
+</p>
 
 ---
 
@@ -817,7 +831,9 @@ Path writeString(Path file, CharSequence lines, Charset cs, OpenOption[] options
 
 ### Сравнителен performance на различните методи за четене на файл
 
-.center[![File Reading Performance](images/07.8-file-reading-performance.png)]
+<p align="center">
+  <img width="85%" src="images/07.8-file-reading-performance.png" alt="File Reading Performance" />
+</p>
 
 ---
 
@@ -927,20 +943,16 @@ Path createTempDirectory(String prefix, FileAttribute<?>... attrs)
 
 <br>
 
-.center[![IO Streams](images/07.9-io-apis-wrapup.gif)]
+<p align="center">
+  <img width="62%" src="images/07.9-io-apis-wrapup.gif" alt="IO Streams" />
+</p>
 
-.center[<small>API-тата, подредени от по-прости към по-сложни</small>]
+<small>API-тата, подредени от по-прости към по-сложни</small>
 
 ---
 
 ### Полезни четива
 
-.center[![Java I/O, NIO and NIO.2](images/07.10-java-io-nio-nio2.png)]
-
----
-
-## Въпроси?
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
+<p align="center">
+  <img width="40%" src="images/07.10-java-io-nio-nio2.png" alt="Java I/O, NIO and NIO.2" />
+</p>
