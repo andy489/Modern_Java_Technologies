@@ -1,10 +1,10 @@
-class: center, middle
-
 # Generics
 
 10.11.2021
 
-.center[![Java Generics](images/05.0-java-generics.jpg)]
+<p align="center">
+  <img width="25%" src="images/05.0-java-generics.jpg" alt="Java Generics" />
+</p>
 
 ---
 
@@ -238,6 +238,7 @@ areEqual = Util.areEqual(p1, p2);
     - `S[]` е наследник на `T[]`, ако `S` е наследник на `T`
 
 <br>
+
 ```java
 Integer[] intArr = new Integer[5];
 Number[] numArr = intArr; // OК
@@ -267,7 +268,9 @@ numArr[0] = 1.23; // Not OK: will compile but will throw an ArrayStoreException 
 
 ### Пример от Collections framework-a
 
-.center[![Collection subtypes](images/05.1-collections-subtypes.png)]
+<p align="center">
+  <img width="35%" src="images/05.1-collections-subtypes.png" alt="Collection subtypes" />
+</p>
 
 ---
 
@@ -500,7 +503,6 @@ Box rawBox = new Box();
 Raw type на `Box<T>` е `Box`.
 Отнемат възможността на компилатора да открива грешки. Оставени са в езика по backward compatibility причини. Избягвайте ги
 
-
 ---
 
 ### Сурови типове (Raw types)
@@ -520,7 +522,6 @@ Box rawBox = new Box();
 // warning: unchecked conversion
 Box<Integer> intBox = rawBox;
 ```
-
 ---
 
 ### Сурови типове (Raw types)
@@ -649,12 +650,6 @@ public class Example {
 
 ### Литература
 
-.center[![Recommended Literature](images/05.2-o-reilly-generics-and-collections.png)]
-
----
-
-## Въпроси?
-
-.font-xl[.ri-github-fill.icon-inline[[fmi/java-course](https://github.com/fmi/java-course)]]
-
-.font-xl[.ri-youtube-fill.icon-inline[[MJT2022](https://www.youtube.com/playlist?list=PLew34f6r0PxyUcIg370lv9jHDwFeMDa7e)]]
+<p align="center">
+  <img width="55%" src="images/05.2-o-reilly-generics-and-collections.png" alt="Recommended Literature" />
+</p>
