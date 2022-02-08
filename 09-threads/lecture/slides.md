@@ -102,7 +102,7 @@ Concurrency е много общ термин и може да се използ
 ### Едно- и многонишкови програми
 
 <p align="center">
-  <img width="70%" src="images/09.2-multithreading.png" alt="Multi-threading" />
+  <img width="75%" src="images/09.2-multithreading.png" alt="Multi-threading" />
 </p>
 
 ---
@@ -110,7 +110,7 @@ Concurrency е много общ термин и може да се използ
 ### Concurrent vs. паралелно изпълнение
 
 <p align="center">
-  <img width="70%" src="images/09.2.1-concurrent-parallel.png" alt="Concurrent vs. Parallel Execution" />
+  <img width="80%" src="images/09.2.1-concurrent-parallel.png" alt="Concurrent vs. Parallel Execution" />
 </p>
 
 ---
@@ -309,7 +309,7 @@ void yield()
 <br>
 
 <p align="center">
-  <img width="38%" src="images/09.3-thread-join.png" alt="Thread Join" />
+  <img width="42%" src="images/09.3-thread-join.png" alt="Thread Join" />
 </p>
 
 ---
@@ -366,7 +366,7 @@ void setDaemon(boolean flag)
 ---
 
 <p align="center">
-  <img width="70%" src="images/09.4-thread-states.jpg" alt="Thread States" />
+  <img width="75%" src="images/09.4-thread-states.jpg" alt="Thread States" />
 </p>
 
 ---
