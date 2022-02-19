@@ -74,7 +74,7 @@ public class Solution {
                 throw new Exception("Overloading not allowed");
             }
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 }
