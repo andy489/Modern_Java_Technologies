@@ -1,5 +1,3 @@
-// github.com/andy489
-
 import java.util.Scanner;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
