@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Solution {
 
     private static int partition(int[] arr, int l, int r) {
-        int randIndex = l + (int) (Math.random() * ((r - l) + 1));
+        int randIndex = l + (int) (Math.random() % ((r - l) + 1));
         arr[randIndex] += arr[r] - (arr[r] = arr[randIndex]);
 
         int piv = arr[r];
