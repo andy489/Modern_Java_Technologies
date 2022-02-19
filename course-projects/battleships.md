@@ -79,7 +79,7 @@ PLAYERS: 2/2, type "start" to start the game
 A |_|*|_|-|_|_|_|*|*|_|                         Legend:
 B |_|*|_|_|_|_|_|_|_|_|				* - ship field
 C |_|*|_|_|_|_|_|_|_|_|				X - hit ship field
-D |_|X|_|_|*|*|*|_|-|_|				О - hit empty field
+D |_|X|_|_|*|*|*|_|-|_|				- - hit empty field
 E |_|_|_|_|_|_|_|_|_|_|
 F |_|_|-|_|_|_|-|_|_|_|
 G |_|_|_|_|_|_|_|_|_|_|
