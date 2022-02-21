@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Problem11Pairs { // O(N * log(N)) (linear) solution for counting (without the printing)
+public class Problem11Pairs { // O(N * log(N)) solution for counting (without the printing)
     public static void main(String... args) {
         Scanner sc = new Scanner(System.in);
 
