@@ -586,5 +586,5 @@ ClassFile {
 <br>
 
 <p align="center">
-  <img width="65%" src="images/13.20-bgjug.png" alt="BGJUG" />
+  <img width="26%" src="images/13.20-bgjug.png" alt="BGJUG" />
 </p>
