@@ -732,18 +732,6 @@ for (Human human : humans) {
     human.whoAmI();
 }
 ```
-
----
-
-### Polymorphic code
-
-```java
-Human[] humans = {ivan, petar};
-
-for (Human human : humans) {
-    human.whoAmI();
-}
-```
 <br>
 Полиморфният код е не само по-кратък и четим. Помислете как трябва да се променят двата фрагмента код, ако в бъдеще се появят нови класове – наследници на `Human`
 
