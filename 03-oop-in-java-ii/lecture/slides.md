@@ -539,8 +539,8 @@ public class Triangle extends Shape {...} // Compile error
 // sealed класове като селектор на switch
 // No need for default case if all permitted types are covered
 double area = switch (shape) {
-    case Circle c    -> Math.pow(c.radius(), 2) * Math.PI
-    case Rectangle r -> r.a() * r.b()
+    case Circle c    -> Math.pow(c.radius(), 2) * Math.PI;
+    case Rectangle r -> r.a() * r.b();
 };
 ```
 
