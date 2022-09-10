@@ -22,8 +22,8 @@
 Конкретна имплементация на интерфейса `Cache`, използваща избрано от нас eviction policy, създаваме чрез следните статични методи на интерфейса `CacheFactory`:
 
 ```java
-static <K, V> Cache<K, V> getInstance(Storage<K, V> storage, int capacity, EvictionPolicy policy)
-static <K, V> Cache<K, V> getInstance(Storage<K, V> storage, EvictionPolicy policy) 
+static <K, V> Cache<K, V> getInstance(Storage<K, V> storage, int capacity, EvictionPolicy policy);
+static <K, V> Cache<K, V> getInstance(Storage<K, V> storage, EvictionPolicy policy);
 ```
 
 където `EvictionPolicy`, както вече се досещате, е от изброим тип, a `Storage<K, V>` е интерфейс на storage (например база данни, файлова система и т.н.), който стои зад нашия кеш. Ако липсва стойност за ключ, който търсим, пробваме да я вземем от storage-a и ако успеем, я добавяме в кеша и я връщаме.
