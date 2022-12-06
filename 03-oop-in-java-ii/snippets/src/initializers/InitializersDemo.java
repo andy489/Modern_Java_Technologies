@@ -4,18 +4,21 @@ class InitializersDemoBase {
     int x;
     static int y;
 
+    private static final double MY_CONST;
+
     {
         x = 1;
-        System.out.println("Parent initializer");
+        System.out.println("Parent initializer executed");
     }
 
     static {
         y = 1;
-        System.out.println("parent static initializer");
+        System.out.println("Parent static initializer executed");
+        MY_CONST = 3.14;
     }
 
     public InitializersDemoBase() {
-        System.out.println("Parent constructor");
+        System.out.println("Parent constructor executed");
     }
 }
 
@@ -34,6 +37,7 @@ public class InitializersDemo extends InitializersDemoBase {
     }
 
     public InitializersDemo() {
+        super();
         a = 10;
         b = 10;
         System.out.println("Child constructor executed");
@@ -44,8 +48,7 @@ public class InitializersDemo extends InitializersDemoBase {
         System.out.println("Child initializer 2 executed");
     }
 
-    public static void main(String[] args) {
-        new InitializersDemo();
+    public static void main(String... args) {
+        InitializersDemo initDemo = new InitializersDemo();
     }
-
 }

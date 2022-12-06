@@ -40,7 +40,7 @@ public class Main {
             System.out.println("AuthenticationException happened to be -> " + e.getClass().getTypeName());
         }
 
-        // Awful - catches every exception
+        // Awful - catches every checked exception
         // We have no idea what error occurred
         try {
             throw new EmailNotFoundException();
@@ -73,6 +73,7 @@ public class Main {
         System.out.println("\n8: " + getNumber());
     }
 
+    // This is very ugly, don't do this at home. It's just for the sake of demonstration
     private static int getNumber() {
         try {
             throw new Exception();
@@ -92,6 +93,7 @@ public class Main {
         throw new WrongPasswordException();
     }
 
-    private static void doesntThrowException() throws WrongPasswordException { }
+    private static void doesntThrowException() throws WrongPasswordException {
+    }
 
 }

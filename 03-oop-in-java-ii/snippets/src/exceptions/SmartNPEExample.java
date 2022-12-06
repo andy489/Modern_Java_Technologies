@@ -3,7 +3,7 @@ package exceptions;
 class Human {
     private String name;
 
-    public Human (String name) {
+    public Human(String name) {
         this.name = name;
     }
 
@@ -19,17 +19,14 @@ class Student extends Human {
         super(name);
         this.facultyNumber = facultyNumber;
     }
-
 }
 
 public class SmartNPEExample {
-
-    public static void main(String[] args) {
-        Student student1 = new Student("Pancho", 62438);
-        Student student2 = new Student(null, 45689);
+    public static void main(String... args) {
+        Student student1 = new Student("Pancho", 62345);
+        Student student2 = new Student(null, 62000);
 
         System.out.println(student1.getName().startsWith("P"));
         System.out.println(student2.getName().startsWith("P"));
     }
-
 }

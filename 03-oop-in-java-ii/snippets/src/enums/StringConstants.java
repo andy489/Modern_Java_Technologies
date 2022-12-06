@@ -14,7 +14,6 @@ public class StringConstants {
     public static final String SATURDAY = "saturday";
     public static final String SUNDAY = "sunday";
 
-
     // We can pass whatever we want here, no matter if it is an actual day or not
     public static void printDayMessage(String day) {
         // Print some message according to the day
