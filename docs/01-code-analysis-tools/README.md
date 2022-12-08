@@ -28,8 +28,8 @@ $ java -jar checkstyle-9.1-all.jar -c $CHECKS my-fancy-project/
 1. _File_ → _Settings..._ → _Plugins_ → _Tools_ → _Checkstyle_
 2. В секцията _Configuration File_ имате две предварително инсталирани конфигурации, _Sun Checks_ и _Google Checks_
 3. За да добавите custom конфигурация, натискате _+_, слагате в _Description_ описание тип "MJT" и избирате локален или remote Checkstyle конфигурационен файл ще ползвате:
-   - _Use a local Checkstyle file_ → _Browse_, като може да си свалите [този](https://github.com/fmi/java-course/blob/master/docs/01-code-analysis-tools/checkstyle/checkstyle.xml) от нашия грейдър
-   - _Use a Checkstyle file accessible via HTTP_ и в полето _URL_ задавате локация на remote файл, например [този](https://raw.githubusercontent.com/fmi/java-course/master/docs/01-code-analysis-tools/checkstyle/checkstyle.xml) от нашия грейдър
+   - _Use a local Checkstyle file_ → _Browse_, като може да си свалите [този](https://github.com/andy489/Modern_Java_Technologies/blob/main/docs/01-code-analysis-tools/checkstyle/checkstyle.xml) от нашия грейдър
+   - _Use a Checkstyle file accessible via HTTP_ и в полето _URL_ задавате локация на remote файл, например [този](https://raw.githubusercontent.com/andy489/Modern_Java_Technologies/main/docs/01-code-analysis-tools/checkstyle/checkstyle.xml) от грейдърa на курса
 
 За да настроите автоматичното форматиране в IDE-то (това, което задействате с Ctrl+Alt+L) да ползва същата custom конфигурация:
 
