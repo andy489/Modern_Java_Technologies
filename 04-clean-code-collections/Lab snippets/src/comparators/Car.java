@@ -1,8 +1,10 @@
+package comparators;
+
 public class Car implements Comparable<Car> {
 
-    private int topSpeed;
-    private String color;
-    private String brand;
+    private final int topSpeed;
+    private final String color;
+    private final String brand;
 
     public int getTopSpeed() {
         return topSpeed;
@@ -27,8 +29,8 @@ public class Car implements Comparable<Car> {
         // Let's sort the cars by top speed in ascending order.
         // The method returns a negative integer, zero, or a positive integer when this car's top speed
         // is less than, equal to, or greater than the top speed of the specified object.
-        // return (other.topSpeed - this.topSpeed);
-        return (this.topSpeed - other.topSpeed);
+        // Integer.compare(other.topSpeed, this.topSpeed);
+        return Integer.compare(this.topSpeed, other.topSpeed);
     }
 
     @Override

@@ -1,16 +1,21 @@
-import java.util.Arrays;
+package collections;
+
+import comparators.Car;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
 public class CollectionsExamples {
-
     private static void exploreCollections() {
         // 1. Sorting
         List<Integer> nums = new ArrayList<>();
@@ -23,7 +28,7 @@ public class CollectionsExamples {
         System.out.println(nums); // [4, 9, 0, 7, -1]
         Collections.sort(nums);
         System.out.println(nums); // [-1, 0, 4, 7, 9]
-        Collections.sort(nums, Collections.reverseOrder());
+        Collections.sort(nums, Comparator.reverseOrder());
         System.out.println(nums); // [9, 7, 4, 0, -1]
 
         // 2. Searching: indexOf(), binarySearch()
@@ -39,7 +44,7 @@ public class CollectionsExamples {
         List<String> from = new ArrayList<>();
         from.add("foo");
         from.add("bar");
-        List<String> to = new LinkedList<>();
+        List<String> to = new ArrayList<>();
         to.add("only");
         to.add("third");
         to.add("remains");
@@ -50,7 +55,7 @@ public class CollectionsExamples {
         Collections.fill(to, "a");
         System.out.println(to); // [a, a, a]
 
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList();
         list.add("1");
         list.add("2");
         list.add("3");
@@ -68,10 +73,12 @@ public class CollectionsExamples {
         System.out.println(Collections.max(numList)); // 9
         System.out.println(Collections.frequency(numList, 7)); // 2
 
-        // 6. Collection static factory methods
-        List<String> listOfWords = List.of("Java", "13", "rulez");
+        // 6. Collection static factory method
+        List<String> listOfWords = List.of("Java", "18", "rlz");
 
-        Set<Integer> setOfInts = Set.of(1, 2, 3, 5, 8);
+        int thirteen = 13;
+        Set<Integer> setOfInts = Set.of(1, 2, 3, 5, 8, thirteen, 8 + thirteen);
+        System.out.println(setOfInts); // [8, 21, 5, 3, 2, 1, 13]
 
         Map<String, Integer> cities = Map.of(
                 "Brussels", 1_139_000,
@@ -82,31 +89,69 @@ public class CollectionsExamples {
                 Map.entry("Brussels", 1_139_000),
                 Map.entry("Cardiff", 341_000)
         );
+
+        // 7. Since Java 19: static factory methods for creating hash-based collections
+//        Set<String> names = HashSet.newHashset(2);
+//        names.add("Anna");
+//        names.add("Jonas");
+//        names.add("Anna");
+//        names.add("Jonas");
+//        names.add("Jonas");
+//        System.out.println(names);
     }
 
     private static void findDistinctWords(String[] words) {
         Set<String> distinctWords = new TreeSet<>();
-        for (String word : words) {
-            distinctWords.add(word);
-        }
+
+        Collections.addAll(distinctWords, words);
 
         System.out.printf("%d distinct words: %s%n", distinctWords.size(), distinctWords);
     }
 
     private static void filterWords(Collection<String> words) {
-        for (Iterator<String> it = words.iterator(); it.hasNext();) {
+        for (Iterator<String> it = words.iterator(); it.hasNext(); ) {
             if (it.next().contains("a")) {
                 it.remove();
             }
         }
     }
 
-    public static void main(String[] args) {
+    private static Map<String, List<Car>> carsByBrandMap(Collection<Car> cars) {
+        Map<String, List<Car>> carsByBrand = new HashMap<>();
+
+        for (Car car : cars) {
+            String brand = car.getBrand();
+//            if (carsByBrand.containsKey(brand)) {
+//                carsByBrand.get(brand).add(car);
+//            } else {
+//                carsByBrand.put(brand, new ArrayList<>(List.of(car)));
+//            }
+
+            carsByBrand.putIfAbsent(brand, new ArrayList<>());
+            carsByBrand.get(brand).add(car);
+        }
+
+        return carsByBrand;
+    }
+
+    public static void main(String... args) {
         exploreCollections();
         findDistinctWords(new String[]{"car", "cat", "dog", "cat", "dog"}); // 3 distinct words: [car, cat, dog]
         List<String> words = new ArrayList<>(Arrays.asList("car", "cat", "dog"));
         filterWords(words);
         System.out.println(words); // [dog]
-    }
 
+        Car c1 = new Car(200, "red", "Ferrari");
+        Car c2 = new Car(100, "green", "Mercedes");
+        Car c3 = new Car(50, "blue", "BMW");
+        Car c4 = new Car(150, "black", "Audi");
+        Car c5 = new Car(250, "blue", "Audi");
+        Car c6 = new Car(120, "black", "Mercedes");
+
+        var carsByBrand = carsByBrandMap(List.of(c1, c2, c3, c4, c5, c6));
+
+        for (String brand : carsByBrand.keySet()) {
+            System.out.println(brand + "--> " + carsByBrand.get(brand));
+        }
+    }
 }
