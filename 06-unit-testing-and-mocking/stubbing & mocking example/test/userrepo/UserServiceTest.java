@@ -68,7 +68,7 @@ public class UserServiceTest {
     @Test
     void testRegisterWhenUSerIsSuccessfullyRegisteredMockWay() {
         UserRepository mockRepo = mock(UserRepository.class);
-        when(mockRepo.exist("test@test.com")).thenReturn(false);
+        when(mockRepo.exist("pesho@gmail.com")).thenReturn(false);
 
         User user = new User("pesho@gmail.com", "Pesho123");
 
