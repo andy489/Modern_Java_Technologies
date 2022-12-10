@@ -29,6 +29,7 @@ gradle-app.setting
 !gradle-wrapper.jar
 
 # IntelliJ
+lib/
 out/
 .idea/
 .idea_modules/
