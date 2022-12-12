@@ -13,6 +13,39 @@ import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
 
 public class ZipExplorer {
+    public static void zipSomeStrings(String zipFilePath) {
+        Map<String, String> stringsToZip = Map.ofEntries(
+                Map.entry("file1", "This is the first file"),
+                Map.entry("file2", "This is the second file"),
+                Map.entry("file3", "This is the third file")
+        );
+
+        try (var zos = new ZipOutputStream(new BufferedOutputStream(Files.newOutputStream(Path.of(zipFilePath))))) {
+            for (var entry : stringsToZip.entrySet()) {
+                zos.putNextEntry(new ZipEntry(entry.getKey()));
+                zos.write(entry.getValue().getBytes());
+                zos.closeEntry();
+            }
+        } catch (IOException e) {
+            throw new RuntimeException();
+        }
+    }
+
+    public static void zipAFile(String filePath, String zipFilePath) {
+        var fileToBeZipped = Path.of(filePath);
+
+        try (ZipOutputStream zippedOutput = new ZipOutputStream(new FileOutputStream(zipFilePath))) {
+            zippedOutput.putNextEntry(new ZipEntry(fileToBeZipped.getFileName().toString()));
+
+            byte[] bytes = Files.readAllBytes(fileToBeZipped);
+            zippedOutput.write(bytes, 0, bytes.length);
+            zippedOutput.closeEntry();
+        } catch (FileNotFoundException e) {
+            System.err.format("The file %s does not exist", filePath);
+        } catch (IOException e) {
+            System.err.format("I/O error: " + e);
+        }
+    }
 
     static void showZipContents(String zipFilePath) {
         try (var zf = new ZipFile(zipFilePath)) {
@@ -28,15 +61,9 @@ public class ZipExplorer {
                         entry.getSize()
                 );
             }
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    static void initialize(Path inputsDir) throws IOException {
-        deleteDirectoryRecursively(inputsDir);
-        Files.createDirectory(inputsDir);
     }
 
     static void deleteDirectoryRecursively(Path pathToDelete) throws IOException {
@@ -49,6 +76,11 @@ public class ZipExplorer {
             }
             Files.delete(pathToDelete);
         }
+    }
+
+    static void initialize(Path inputsDir) throws IOException {
+        deleteDirectoryRecursively(inputsDir);
+        Files.createDirectory(inputsDir);
     }
 
     static void unzipAZip(String zipFilePath, String toPath) {
@@ -79,49 +111,11 @@ public class ZipExplorer {
         }
     }
 
-    static void zipSomeStrings(String zipFilePath) {
-        Map<String, String> stringsToZip = Map.ofEntries(
-                Map.entry("file1", "This is the first file"),
-                Map.entry("file2", "This is the second file"),
-                Map.entry("file3", "This is the third file")
-        );
-        var zipPath = Path.of(zipFilePath);
-        try (var zos = new ZipOutputStream(
-                new BufferedOutputStream(Files.newOutputStream(Path.of(zipFilePath))))) {
-            for (var entry : stringsToZip.entrySet()) {
-                zos.putNextEntry(new ZipEntry(entry.getKey()));
-                zos.write(entry.getValue().getBytes());
-                zos.closeEntry();
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+    public static void main(String... args) {
+        zipSomeStrings("files/zippedStrings.zip");
+        zipAFile("files/students.bin", "files/zippedStudents.zip");
+        showZipContents("files/zippedStrings.zip");
+        unzipAZip("files/zippedStrings.zip", "unzipped");
+//        deleteDirectoryRecursively(Path.of("unzipped"));
     }
-
-    static void zipAFile(String filePath, String zipFilePath) {
-        var fileToBeZipped = Path.of(filePath);
-
-        try (ZipOutputStream zippedOutput = new ZipOutputStream(new FileOutputStream(zipFilePath))) {
-            zippedOutput.putNextEntry(new ZipEntry(fileToBeZipped.getFileName().toString()));
-
-            byte[] bytes = Files.readAllBytes(fileToBeZipped);
-            zippedOutput.write(bytes, 0, bytes.length);
-            zippedOutput.closeEntry();
-        } catch (FileNotFoundException e) {
-            System.err.format("The file %s does not exist", filePath);
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            System.err.println("I/O error: " + e);
-            throw new RuntimeException(e);
-        }
-    }
-
-    public static void main(String[] args) throws IOException {
-        zipSomeStrings("zippedStrings.zip");
-        zipAFile("students.bin", "zippedStudents.zip");
-        showZipContents("src.zip");
-        unzipAZip("src.zip", "unzipped");
-        deleteDirectoryRecursively(Path.of("unzipped"));
-    }
-
 }

@@ -9,23 +9,23 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class TextFileDuplicator {
-
     // copy a text file, exactly replicating the source file's line breaks
     public static void copyTextFileExact(String fromFileName, String toFileName) throws IOException {
         Pattern pat = Pattern.compile(".*\\R|.+\\z");
 
-        try (var scanner = new Scanner(new BufferedReader(new FileReader(fromFileName)));
-             var writer = new BufferedWriter((new FileWriter(toFileName)))) {
-
+        try (
+                var sc = new Scanner(new BufferedReader(new FileReader(fromFileName)));
+                var wr = new BufferedWriter((new FileWriter(toFileName)))
+        ) {
             String line;
-            while ((line = scanner.findWithinHorizon(pat, 0)) != null) {
-                writer.write(line);
-                writer.flush();
+            while ((line = sc.findWithinHorizon(pat, 0)) != null) {
+                wr.write(line);
+                wr.flush();
             }
         }
     }
 
-    public static void main(String[] args) throws IOException {
-        copyTextFileExact("source.txt", "destination.txt");
+    public static void main(String... args) throws IOException {
+        copyTextFileExact("files/source.txt", "files/destination.txt");
     }
 }

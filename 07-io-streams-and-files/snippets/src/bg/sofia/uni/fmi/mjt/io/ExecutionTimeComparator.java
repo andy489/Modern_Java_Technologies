@@ -1,97 +1,88 @@
 package bg.sofia.uni.fmi.mjt.io;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class ExecutionTimeComparator {
-
     private static final int MAX_ITERATIONS = 1_000_000;
+    private static final int NANO_SECONDS_IN_ONE_MILLIS = 1_000_000;
     private static final int BUFFER_SIZE = 8192;
 
     public static void main(String... args) {
         System.err.println("Read time comparison results:");
 
-        Path filePath = Path.of("compareExecutionTime.txt");
+        Path filePath = Path.of("files", "compareExecutionTime.txt");
         String line = "Hello World";
 
         fillFileWithText(filePath, line);
 
-        System.out.println("Single byte read took: "
-                + readFromFile(filePath) + " milliseconds");
-        System.out.println("BufferedReader read took: "
-                + readFromFileWithBufferedReader(filePath) + " milliseconds");
-        System.out.println("BufferedInputStream read took: "
-                + readFromFileWithBufferedInputStream(filePath) + " milliseconds");
+        System.out.println("Single byte read took: " + readFromFile(filePath) + " milliseconds");
+        System.out.println("BufferedReader read took: " + readFromFileWithBufferedReader(filePath) + " milliseconds");
+        System.out.println("BufferedInputStream read took: " + readFromFileWithBufferedInputStream(filePath) + " milliseconds");
     }
 
     private static void fillFileWithText(Path file, String line) {
-        try (Writer fileWriter = Files.newBufferedWriter(file)) {
-            for (int i = 0; i <= MAX_ITERATIONS; i++) {
-                fileWriter.write(line);
+        try (var wr = Files.newBufferedWriter(file)) {
+            for (int i = 0; i < MAX_ITERATIONS; i++) {
+                wr.write(line);
             }
 
-            fileWriter.flush();
+            wr.flush();
 
-            long writtenBytesLength = line.getBytes().length * MAX_ITERATIONS;
-            long writtenMegabytesLength = writtenBytesLength / MAX_ITERATIONS;
+            long writtenMegabytesLength = line.getBytes().length;
+            long writtenBytesLength = writtenMegabytesLength * MAX_ITERATIONS;
+
             System.out.println("Wrote " + writtenBytesLength + " bytes (" + writtenMegabytesLength + " megabytes)" +
-                    " to the file");
+                    " to the file" + System.lineSeparator());
         } catch (IOException e) {
             throw new IllegalStateException("A problem occurred while writing to a file", e);
         }
     }
 
     private static long readFromFile(Path file) {
-        try (InputStream inputStream = Files.newInputStream(file)) {
-
+        try (var is = Files.newInputStream(file)) {
             long startTime = System.nanoTime();
-            // System.err.println("Start time is: " + startTime);
-            while (inputStream.read() != -1) {
-                // Do some processing
-            }
-            long endTime = System.nanoTime();
-            // System.err.println("End time is: " + endTime);
 
-            return (endTime - startTime) / MAX_ITERATIONS; // milliseconds
-        } catch (IOException e) {
-            throw new IllegalStateException("A problem occurred while reading from a file", e);
-        }
-    }
-
-    private static long readFromFileWithBufferedReader(Path file) {
-        try (BufferedReader bufferedReader = Files.newBufferedReader(file)) {
-
-            long startTime = System.nanoTime();
-            while (bufferedReader.readLine() != null) {
+            while (is.read() != -1) {
                 // Do some processing
             }
             long endTime = System.nanoTime();
 
-            return (endTime - startTime) / MAX_ITERATIONS;
+            return (endTime - startTime) / NANO_SECONDS_IN_ONE_MILLIS; // milliseconds
         } catch (IOException e) {
-            throw new IllegalStateException("A problem occurred while reading from a file", e);
+            throw new IllegalStateException(String.format("A problem occurred while reading from file %s", file.getFileName()), e);
         }
     }
 
     private static long readFromFileWithBufferedInputStream(Path file) {
-        try (InputStream inputStream = Files.newInputStream(file)) {
+        try (var is = Files.newInputStream(file)) {
             byte[] buff = new byte[BUFFER_SIZE]; // 8K bytes buffer
             int r = 0;
+            long startTime = System.nanoTime();
+
+            while ((r = is.read(buff)) != -1) {
+            }
+            long endTime = System.nanoTime();
+
+            return (endTime - startTime) / NANO_SECONDS_IN_ONE_MILLIS;
+        } catch (IOException e) {
+            throw new IllegalStateException(String.format("A problem occurred while reading from file %s", file.getFileName()), e);
+        }
+    }
+
+    private static long readFromFileWithBufferedReader(Path file) {
+        try (var br = Files.newBufferedReader(file)) {
 
             long startTime = System.nanoTime();
-            while ((r = inputStream.read(buff)) != -1) {
+            while (br.readLine() != null) {
                 // Do some processing
             }
             long endTime = System.nanoTime();
 
-            return (endTime - startTime) / MAX_ITERATIONS;
-        } catch (Exception e) {
-            throw new IllegalStateException("A problem occurred while reading from a file", e);
+            return (endTime - startTime) / NANO_SECONDS_IN_ONE_MILLIS;
+        } catch (IOException e) {
+            throw new IllegalStateException(String.format("A problem occurred while reading from file %s", file.getFileName()), e);
         }
     }
-
 }

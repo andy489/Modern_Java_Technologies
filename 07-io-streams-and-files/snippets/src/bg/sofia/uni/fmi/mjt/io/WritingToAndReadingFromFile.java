@@ -1,14 +1,13 @@
 package bg.sofia.uni.fmi.mjt.io;
 
-import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class WritingToAndReadingFromFile {
-
     public static void main(String... args) {
-        Path filePath = Path.of("writingAndReadingFromFile.txt");
+        Path filePath = Path.of("files", "writingAndReadingFromFile.txt");
         String text = "Write this string to my file" + System.lineSeparator();
 
         writeToFile(filePath, text);
@@ -16,24 +15,25 @@ public class WritingToAndReadingFromFile {
     }
 
     private static void writeToFile(Path filePath, String text) {
-        try (var bufferedWriter = Files.newBufferedWriter(filePath)) {
-            bufferedWriter.write(text);
-            bufferedWriter.flush();
+        File file = new File(filePath.getParent().toString());
+        boolean creation = file.mkdirs();
+
+        try (var bw = Files.newBufferedWriter(filePath)) {
+            bw.write(text);
+            bw.flush();
         } catch (IOException e) {
-            throw new IllegalStateException("A problem occurred while writing to a file", e);
+            throw new IllegalStateException(String.format("A problem occurred while writing to file %s.", filePath.getFileName()));
         }
     }
 
     private static void readFromFile(Path filePath) {
-        try (BufferedReader bufferedReader = Files.newBufferedReader(filePath)) {
+        try (var br = Files.newBufferedReader(filePath)) {
             String line;
-
-            while ((line = bufferedReader.readLine()) != null) {
+            while ((line = br.readLine()) != null) {
                 System.out.println(line);
             }
         } catch (IOException e) {
-            throw new IllegalStateException("A problem occurred while reading from a file", e);
+            throw new IllegalStateException(String.format("A problem occurred while reading from file %s", filePath.getFileName()));
         }
     }
-
 }
